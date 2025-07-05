@@ -1,32 +1,99 @@
-## 📦 Project: **azure-vnet-peering**
+Sure — here’s a clean, well-structured and properly formatted `README.md` version of your instructions:
 
-// install terraform 
+---
 
-// windows 
-choco install terraform 
+````markdown
+# 📦 Project: **Azure VNet Peering**
 
-terraform --version 
+## 🛠️ Prerequisites
 
-// login to azure portal 
+- **Terraform** installed on your system  
+  👉 [Terraform Install Guide](https://developer.hashicorp.com/terraform/downloads)
 
-az login 
+- **Azure CLI** installed and configured  
+  👉 [Azure CLI Install Guide](https://learn.microsoft.com/en-us/cli/azure/install-azure-cli)
 
-// update your subscription details to provider.tf 
+---
 
-nano provider.tf >> update your subscription id 
+## 📥 Install Terraform (Windows)
 
-manually create resource group named as >> ```azurerm_resource_group```
+```bash
+choco install terraform
+terraform --version
+````
 
-```
-terraform init 
-terraform plan 
-terraform apply 
-```
-```
-terraform destroy 
+---
+
+## 🔐 Login to Azure
+
+```bash
+az login
 ```
 
 ---
+
+## ⚙️ Configure Subscription Details
+
+1. Open `provider.tf`
+2. Update your Azure Subscription ID
+
+```bash
+nano provider.tf
+# Replace the subscription ID value
+```
+
+---
+
+## 🗂️ Create Resource Group (Manual Step)
+
+Before running Terraform, manually create a resource group in Azure named:
+
+```
+azurerm_resource_group
+```
+
+---
+
+## 🚀 Deploy Infrastructure with Terraform
+
+### Initialize Terraform
+
+```bash
+terraform init
+```
+
+### Review the Execution Plan
+
+```bash
+terraform plan
+```
+
+### Apply the Configuration
+
+```bash
+terraform apply
+```
+
+---
+
+## 🧹 Destroy the Infrastructure
+
+To tear down the deployed resources:
+
+```bash
+terraform destroy
+```
+
+---
+
+## 📌 Notes
+
+* Ensure your terminal/command prompt has the required permissions.
+* Resource naming and configurations can be customized via `terraform.tfvars`.
+* Peering is established between VNets with non-overlapping address spaces.
+
+```
+
 
 ## 📑 Resources Created:
 
@@ -272,6 +339,14 @@ terraform destroy -var-file="terraform.tfvars"
 Atul — Cloud Solutions Architect
 
 ```
+
+## 📚 References
+
+* [Terraform Azure Provider Docs](https://registry.terraform.io/providers/hashicorp/azurerm/latest/docs)
+* [Azure VNet Peering Overview](https://learn.microsoft.com/en-us/azure/virtual-network/virtual-network-peering-overview)
+
+```
+
 
 ---
 
