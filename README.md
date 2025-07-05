@@ -99,7 +99,6 @@ terraform destroy
 
 ## 📂 Final Project Structure:
 
-```
 azure-vnet-peering-demo/
 ├── provider.tf
 ├── main.tf
