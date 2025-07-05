@@ -79,8 +79,6 @@ To tear down the deployed resources:
 terraform destroy
 ```
 
----
-
 ## 📌 Notes
 
 * Ensure your terminal/command prompt has the required permissions.
@@ -89,7 +87,7 @@ terraform destroy
 
 ```
 
-
+---
 ## 📑 Resources Created:
 
 * ✅ Azure Resource Group
@@ -97,7 +95,7 @@ terraform destroy
 * ✅ Two Subnets
 * ✅ Bi-directional VNet Peering
 * ✅ (Optional enhancement ready: NSG + VM provisioning + ICMP rules)
-
+---
 
 ## 📂 Final Project Structure:
 
