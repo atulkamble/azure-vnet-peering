@@ -1,5 +1,31 @@
 ## 📦 Project: **azure-vnet-peering**
 
+// install terraform 
+
+// windows 
+choco install terraform 
+
+terraform --version 
+
+// login to azure portal 
+
+az login 
+
+// update your subscription details to provider.tf 
+
+nano provider.tf >> update your subscription id 
+
+manually create resource group named as >> ```azurerm_resource_group```
+
+```
+terraform init 
+terraform plan 
+terraform apply 
+```
+```
+terraform destroy 
+```
+
 ---
 
 ## 📑 Resources Created:
