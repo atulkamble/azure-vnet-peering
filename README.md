@@ -1,8 +1,3 @@
-Sure — here’s a clean, well-structured and properly formatted `README.md` version of your instructions:
-
----
-
-````markdown
 # 📦 Project: **Azure VNet Peering**
 
 ## 🛠️ Prerequisites
