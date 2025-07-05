@@ -98,7 +98,6 @@ terraform destroy
 * ✅ Bi-directional VNet Peering
 * ✅ (Optional enhancement ready: NSG + VM provisioning + ICMP rules)
 
----
 
 ## 📂 Final Project Structure:
 
