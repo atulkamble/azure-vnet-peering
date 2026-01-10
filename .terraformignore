@@ -1,0 +1,28 @@
+# Git files
+.git/
+.gitignore
+
+# Documentation
+*.md
+README*
+
+# CI/CD
+.github/
+.gitlab-ci.yml
+.travis.yml
+
+# IDE
+.vscode/
+.idea/
+*.swp
+*.swo
+*~
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Test files
+*_test.go
+test/
+tests/
