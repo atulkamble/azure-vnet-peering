@@ -1,4 +1,4 @@
- variable "resource_group_name" {
+variable "resource_group_name" {
   description = "Name of the Azure Resource Group"
   type        = string
 }
@@ -26,4 +26,22 @@ variable "subnet_a_prefix" {
 variable "subnet_b_prefix" {
   description = "Address prefix for Subnet-B"
   type        = list(string)
+}
+
+variable "vm_size" {
+  description = "Size of the Virtual Machines"
+  type        = string
+  default     = "Standard_B1s"
+}
+
+variable "admin_username" {
+  description = "Admin username for the VMs"
+  type        = string
+  default     = "azureuser"
+}
+
+variable "admin_password" {
+  description = "Admin password for the VMs"
+  type        = string
+  sensitive   = true
 }
